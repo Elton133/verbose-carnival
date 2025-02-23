@@ -4,11 +4,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import PersonalDetails from "./components/PersonalDetails";
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import ProjectsSection from "./components/project-preview";
 import Banner from "./components/Banner";
 import AboutMe from "./components/about-me";
 import TechStack from "./components/tech-stack";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 const App = () => {
   return (
@@ -18,9 +19,11 @@ const App = () => {
       <AboutMe />
       <TechStack />
       <Contact />
+      <ProjectsSection />
+      <Footer />
+
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
       </Routes>
     </div>
   );

@@ -4,12 +4,7 @@ const PersonalDetails = () => {
       <div className=" text-center" id="personal-details">
         {/* <p className="text-4xl font-bold">Hi 👋🏿 I'm Elton Morden</p> */}
         <svg viewBox="0 0 800 200" width="100%" height="75">
-          <text
-            x="50%"
-            y="50%"
-            textAnchor="middle"
-            className="animated-text fill-current text-black dark:text-white"
-          >
+          <text x="50%" y="50%" textAnchor="middle" className="animated-text ">
             Hi 👋🏿 I'm Elton Morden
           </text>
         </svg>

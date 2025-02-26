@@ -15,7 +15,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar pt-5">
         <span className="logo">
-          <p>Elton</p>
+          <a href="/">Elton</a>
         </span>
         <span className="hamburger" onClick={toggleMenu}>
           ☰
@@ -23,7 +23,7 @@ const Navbar = () => {
 
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li>
-            <a className="nav-link active" href="#">
+            <a className="nav-link active" href="/projects">
               Projects
             </a>
           </li>

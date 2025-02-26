@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar pt-5">
-        <span className="logo">
+        <span className="logo font-bold">
           <a href="/">Elton</a>
         </span>
         <span className="hamburger" onClick={toggleMenu}>
@@ -30,7 +30,7 @@ const Navbar = () => {
             <Link to="#">Blog</Link>
           </li>
           <li>
-            <Link to="#">Now</Link>
+            <Link to="/now">Now</Link>
           </li>
           <li>
             <Link to="#">Tutorials</Link>

@@ -72,6 +72,20 @@ export default function Projects() {
       date: "2024-10",
       url: "https://fanyogo1.netlify.app",
     },
+    {
+      id: "weather",
+      title: "Weather app",
+      description: "A weather app that shows the current weather conditions",
+      date: "2024-10",
+      url: "https://elton-weather.netlify.app",
+    },
+    {
+      id: "teamvault",
+      title: "TeamVault",
+      description: "Allows HR Managers to manage employees and their details",
+      date: "2025-01",
+      url: "https://teamvault.netlify.app",
+    },
   ];
 
   return (

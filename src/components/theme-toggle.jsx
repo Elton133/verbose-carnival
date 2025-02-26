@@ -1,14 +1,6 @@
 // ThemeToggle.js
 import { useEffect, useState } from "react";
-import {
-  Moon,
-  MoonIcon,
-  MoonStarIcon,
-  Sun,
-  SunDimIcon,
-  SunIcon,
-  Sunrise,
-} from "lucide-react";
+import { MoonStarIcon, Sun } from "lucide-react";
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -36,5 +28,5 @@ const ThemeToggle = () => {
     </button>
   );
 };
-
+// "☀️"
 export default ThemeToggle;

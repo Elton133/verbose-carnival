@@ -6,6 +6,7 @@ import profilecard from "../assets/profile-card.png";
 import devex from "../assets/devex.mp4";
 import tourghana from "../assets/tourghana.png";
 import fanyogo from "../assets/fanyogo.mp4";
+import weather from "../assets/weather.mp4";
 
 const projectData = [
   {
@@ -50,22 +51,55 @@ const projectData = [
     isVideo: false,
   },
   {
+    id: "teamvault",
+    image: dashboard,
+    title: "Employee Management Site",
+    description:
+      "Allows HR Managers to manage employees and their details. Allows HR Managers to manage employees and their details. Allows HR Managers to manage employees and their details. Allows HR Managers to manage employees and their details.",
+    date: "2025-01-23",
+    stack: [
+      "React",
+      "CSS",
+      "Local Storage for Data Persistence",
+      "App.haikei for SVG Backgrounds",
+      "React Icons for Icons",
+      "React Router for Navigation",
+      "React hot toast for Notifications",
+    ],
+    features: [
+      {
+        title: "Add Employees",
+        description: "Add new employees to the database",
+      },
+      {
+        title: "View Employees",
+        description: "View employees makes use of the profile card component",
+      },
+      {
+        title: "Edit Employees",
+        description: "Local Storage fills in saved data for editing",
+      },
+      {
+        title: "Delete Employees",
+        description: "Remove employees from the database",
+      },
+      {
+        title: "Toasts",
+        description: "Notifications for user actions",
+      },
+    ],
+    url: "https://teamvault.netlify.app",
+    isVideo: false,
+  },
+  {
     id: "ai-ally",
     image: aially,
     title: "Ai Ally",
-    description: "A landing page about a concept AI ally.",
+    description:
+      "AI Ally is a versatile assistant that utilizes state-of-the-art natural language processing to provide real-time support and assistance across various domains",
     date: "2024-12-05",
     stack: ["React", "CSS", "Inspiration from Dribbble"],
-    features: [
-      {
-        title: "Employee Management Dashboard",
-        description: "Allows HR Managers to manage employees and their details",
-      },
-      {
-        title: "Employee Management Dashboard",
-        description: "Allows HR Managers to manage employees and their details",
-      },
-    ],
+    features: [],
     url: "https://ai-ally.netlify.app",
     isVideo: false,
   },
@@ -162,6 +196,29 @@ const projectData = [
       },
     ],
     url: "https://fanyogo1.netlify.app",
+    isVideo: true,
+  },
+  {
+    id: "weather",
+    image: weather,
+    title: "Weather App",
+    description:
+      "A weather forecasting app that provides real-time weather updates for any location. The app integrates with a REST API to fetch and display temperature, weather conditions, and more. Developed using React, Vite, and modern API integration techniques, ensuring fast performance and a seamless user experience. Optimized as a Progressive Web App (PWA), allowing users to install it on their devices for offline access and a native-like experience.",
+    date: "2024-09-24",
+    stack: ["React", "CSS", "Vite", "Open weather API"],
+    features: [
+      {
+        title: "Real-time Weather Updates",
+        description:
+          "Fetches and displays real-time weather data for any location",
+      },
+      {
+        title: "Progressive Web App (PWA)",
+        description:
+          "Optimized for offline access and a native-like experience on mobile devices",
+      },
+    ],
+    url: "https://elton-weather.netlify.app",
     isVideo: true,
   },
 ];

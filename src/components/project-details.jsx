@@ -14,7 +14,7 @@ const projectData = [
     title: "Employee Management Dashboard",
     description:
       "Allows HR Managers to manage employees and their details. Allows HR Managers to manage employees and their details. Allows HR Managers to manage employees and their details. Allows HR Managers to manage employees and their details.",
-    date: "2025-01",
+    date: "2025-01-23",
     stack: [
       "React",
       "CSS",
@@ -54,7 +54,7 @@ const projectData = [
     image: aially,
     title: "Ai Ally",
     description: "A landing page about a concept AI ally.",
-    date: "2025-01",
+    date: "2024-12-05",
     stack: ["React", "CSS", "Inspiration from Dribbble"],
     features: [
       {
@@ -75,7 +75,7 @@ const projectData = [
     title: "Profile Card Component",
     description:
       "Responsive profile card component with light and dark theme options. Features customizable user information, social media links, and interactive action buttons.",
-    date: "2025-01",
+    date: "2024-11-15",
     stack: ["React", "CSS"],
     features: [
       {
@@ -120,7 +120,7 @@ const projectData = [
     title: "TourGhana",
     description:
       "An educative and informative website for tourists and students in Ghana. This website dives into the various regions in Ghana, highlighting the culture, history, and tourist attractions. You're in for an exciting journey!",
-    date: "2025-01",
+    date: "2024-05-24",
     stack: ["React", "CSS"],
     features: [
       {
@@ -153,7 +153,7 @@ const projectData = [
     title: "Fanyogo",
     description:
       "An informative website about Ghana's favorite afternoon delight",
-    date: "2025-01",
+    date: "2024-09-24",
     stack: ["React", "CSS"],
     features: [
       {
@@ -187,7 +187,7 @@ export default function ProjectDetails() {
           <video
             src={project.image}
             alt={project.title}
-            className="mb-7 rounded-2xl w-full h-90 object-cover transition-transform duration-500 hover:scale-103"
+            className="mb-7 rounded-2xl w-full h-auto object-cover transition-transform duration-500 hover:scale-103"
             autoPlay
             loop
             muted
@@ -197,7 +197,7 @@ export default function ProjectDetails() {
           <img
             src={project.image}
             alt={project.title}
-            className="mb-7 rounded-2xl w-full h-90 object-cover transition-transform duration-500 hover:scale-103"
+            className="mb-7 rounded-2xl w-full h-auto object-cover  transition-transform duration-500 hover:scale-103"
           />
         )}
 

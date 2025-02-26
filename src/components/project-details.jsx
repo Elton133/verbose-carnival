@@ -7,6 +7,7 @@ import devex from "../assets/devex.mp4";
 import tourghana from "../assets/tourghana.png";
 import fanyogo from "../assets/fanyogo.mp4";
 import weather from "../assets/weather.mp4";
+import pricingpanel from "../assets/pricingpanel.png";
 
 const projectData = [
   {
@@ -199,27 +200,16 @@ const projectData = [
     isVideo: true,
   },
   {
-    id: "weather",
-    image: weather,
-    title: "Weather App",
+    id: "pricingpanel",
+    image: pricingpanel,
+    title: "Pricing Panel",
     description:
       "A weather forecasting app that provides real-time weather updates for any location. The app integrates with a REST API to fetch and display temperature, weather conditions, and more. Developed using React, Vite, and modern API integration techniques, ensuring fast performance and a seamless user experience. Optimized as a Progressive Web App (PWA), allowing users to install it on their devices for offline access and a native-like experience.",
     date: "2024-09-24",
-    stack: ["React", "CSS", "Vite", "Open weather API"],
-    features: [
-      {
-        title: "Real-time Weather Updates",
-        description:
-          "Fetches and displays real-time weather data for any location",
-      },
-      {
-        title: "Progressive Web App (PWA)",
-        description:
-          "Optimized for offline access and a native-like experience on mobile devices",
-      },
-    ],
-    url: "https://elton-weather.netlify.app",
-    isVideo: true,
+    stack: ["HTML", "CSS"],
+    features: [],
+    url: "https://pricingpanel1.netlify.app",
+    isVideo: false,
   },
 ];
 

@@ -86,6 +86,13 @@ export default function Projects() {
       date: "2025-01",
       url: "https://teamvault.netlify.app",
     },
+    {
+      id: "pricingpanel",
+      title: "Pricing Panel",
+      description: "A pricing panel that can be used in any app",
+      date: "2025-01",
+      url: "https://pricingpanel1.netlify.app",
+    },
   ];
 
   return (

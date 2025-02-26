@@ -43,32 +43,34 @@ export default function Projects() {
       url: "https://ai-ally.netlify.app",
     },
     {
-      id: "ai-ally",
-      title: "Ai Ally",
-      description: "A landing page for an AI chatbot",
+      id: "profile-card",
+      title: "Profile Card",
+      description: "A sleek and minimalistic profile card component",
+      date: "2024-10",
+    },
+    {
+      id: "developer-experience",
+      title: "The Developer Experience",
+      description:
+        "A landing page for an upcoming website that focuses on developer experience",
+      date: "2024-10",
+      //   url: "https://ai-ally.netlify.app",
+    },
+    {
+      id: "tourghana",
+      title: "TourGhana website",
+      description:
+        "An educative and informative website for tourists, students in Ghana",
       date: "2024-10",
       url: "https://ai-ally.netlify.app",
     },
     {
-      id: "ai-ally",
-      title: "Ai Ally",
-      description: "A landing page for an AI chatbot",
+      id: "fanyogo",
+      title: "Fanyogo website",
+      description:
+        "An informative website about Ghana's favorite afternoon delight",
       date: "2024-10",
-      url: "https://ai-ally.netlify.app",
-    },
-    {
-      id: "ai-ally",
-      title: "Ai Ally",
-      description: "A landing page for an AI chatbot",
-      date: "2024-10",
-      url: "https://ai-ally.netlify.app",
-    },
-    {
-      id: "ai-ally",
-      title: "Ai Ally",
-      description: "A landing page for an AI chatbot",
-      date: "2024-10",
-      url: "https://ai-ally.netlify.app",
+      url: "https://fanyogo1.netlify.app",
     },
   ];
 
@@ -98,7 +100,7 @@ export default function Projects() {
                 key={feature.id}
                 onClick={() => navigate(`/projects/${feature.id}`)}
                 variants={item}
-                className="relative p-6 h-[12rem] hover:shadow-lg border border-[#55555565] dark:hover:bg-[#131313] rounded-2xl transition-transform duration-500 ease-in-out cursor-pointer transform hover:scale-103 origin-center"
+                className="relative p-6 h-[12rem] hover:shadow-lg border-[1.5px] border-[#55555565] dark:hover:bg-[#131313] rounded-2xl transition-transform duration-500 ease-in-out cursor-pointer transform hover:scale-103 origin-center"
               >
                 <div className="flex flex-col h-full justify-between">
                   <div className="relative">

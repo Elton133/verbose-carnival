@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
 import ThemeToggle from "./theme-toggle";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -23,24 +24,16 @@ const Navbar = () => {
 
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li>
-            <a className="nav-link active" href="/projects">
-              Projects
-            </a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <a className="nav-link" href="#">
-              Blog
-            </a>
+            <Link to="#">Blog</Link>
           </li>
           <li>
-            <a className="nav-link" href="#testimonials">
-              Now
-            </a>
+            <Link to="#">Now</Link>
           </li>
           <li>
-            <a className="nav-link" href="#">
-              Tutorials
-            </a>
+            <Link to="#">Tutorials</Link>
           </li>
         </ul>
         <span>

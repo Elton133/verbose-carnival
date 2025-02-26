@@ -1,11 +1,15 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full">
-      <div
+      <motion.div
         id="myself"
         className="w-full md:w-1/2 text-center md:text-[16px] text-sm p-5 md:p-0"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <p>
           I am Ghanaian, from Greater Accra, specifically Prampram 🇬🇭. I love
@@ -21,7 +25,7 @@ const AboutMe = () => {
           through aesthetics but by ensuring a seamless and intuitive user
           journey.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

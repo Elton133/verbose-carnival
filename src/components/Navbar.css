@@ -129,6 +129,8 @@ ul li a:active {
   visibility: hidden;
   transform: translateY(-10px);
   transition: all 0.3s ease-in-out;
+  background-color: rgba(57, 55, 55, 0.534);
+  z-index: 1000;
 }
 
 @media (min-width: 768px) {

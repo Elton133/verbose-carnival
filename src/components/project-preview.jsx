@@ -29,16 +29,16 @@ export default function ProjectsSection() {
   };
   const features = [
     {
+      id: "employee-management",
       title: "Employee Management Dashboard",
       description: "Allows HR Managers to manage employees and their details",
       date: "2025-01",
-      url: "https://elton-dashboard.netlify.app",
     },
     {
+      id: "ai-ally",
       title: "Ai Ally",
       description: "A landing page for an AI chatbot",
       date: "2024-10",
-      url: "https://ai-ally.netlify.app",
     },
   ];
 
@@ -66,10 +66,10 @@ export default function ProjectsSection() {
             {features.map((feature, index) => (
               <motion.div
                 key={index}
-                onClick={() => window.open(feature.url, "_blank")}
+                onClick={() => navigate(`projects/${feature.id}`)}
                 variants={item}
               >
-                <div className="relative p-6 h-[12rem] hover:shadow-lg border border-[#55555565] dark:hover:bg-[#131313] rounded-2xl transition-transform duration-500 ease-in-out cursor-pointer transform hover:scale-103 origin-center">
+                <div className="relative p-6 h-[12rem] hover:shadow-lg border-[1.5px] border-[#55555565] dark:hover:bg-[#131313] rounded-2xl transition-transform duration-500 ease-in-out cursor-pointer transform hover:scale-103 origin-center">
                   <div className="flex flex-col h-full justify-between">
                     <div className="relative">
                       <p className="text-sm text-gray-700">{feature.date}</p>
@@ -85,9 +85,9 @@ export default function ProjectsSection() {
               </motion.div>
             ))}
           </motion.div>
-          <Link className="text-blue-500 text-bold ml-2 hover:underline text-sm">
-            View all projects
-          </Link>
+          <div className="text-blue-500 text-bold ml-2 mt-2 hover:underline text-sm">
+            <Link to="/projects">View all projects</Link>
+          </div>
         </div>
       </div>
     </div>

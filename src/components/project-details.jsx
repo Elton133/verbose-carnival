@@ -95,9 +95,9 @@ const projectData = [
   {
     id: "developer-experience",
     image: devex,
-    title:
+    title: "The Developer Experience",
+    description:
       "A cutting-edge platform designed to revolutionize the developer experience through immersive visuals and intelligent accountability tools. Our environment helps programmers maintain consistency, track progress, and rediscover the joy of coding through a seamless, engaging interface that adapts to your workflow.",
-    description: "The Developer Experience",
     date: "2025-01",
     stack: ["React", "Tailwind CSS"],
     features: [
@@ -161,7 +161,7 @@ const projectData = [
         description: "Show cases the various flavors of fanyogo",
       },
     ],
-    url: "https://fanyogo.netlify.app",
+    url: "https://fanyogo1.netlify.app",
     isVideo: true,
   },
 ];
@@ -187,7 +187,7 @@ export default function ProjectDetails() {
           <video
             src={project.image}
             alt={project.title}
-            className="mb-7 rounded-2xl w-full h-auto object-cover transition-transform duration-500 hover:scale-103"
+            className="mb-7 rounded-2xl w-full h-90 object-cover transition-transform duration-500 hover:scale-103"
             autoPlay
             loop
             muted
@@ -197,14 +197,16 @@ export default function ProjectDetails() {
           <img
             src={project.image}
             alt={project.title}
-            className="mb-7 rounded-2xl w-full h-auto object-cover transition-transform duration-500 hover:scale-103"
+            className="mb-7 rounded-2xl w-full h-90 object-cover transition-transform duration-500 hover:scale-103"
           />
         )}
 
-        <h2 className="text-3xl font-extrabold">{project.title}</h2>
-        <p className="text-[#52525B]">{project.date}</p>
-        <p className="mt-4 mb-10 text-[#52525B]">{project.description}</p>
-        <p className="mt-4 mb-3 text-[20px] font-bold text-[#52525B]">
+        <h2 className="md:text-3xl text-[18px] font-extrabold">
+          {project.title}
+        </h2>
+        <p className="text-[#4A5568]">{project.date}</p>
+        <p className="mt-4 mb-10 text-[#4A5568]">{project.description}</p>
+        <p className="mt-4 mb-3 text-[20px] font-bold text-[#4A5568]">
           Tech Stack
         </p>
 
@@ -218,13 +220,17 @@ export default function ProjectDetails() {
             </li>
           ))}
         </ul>
-        <p className="mt-10 mb-3 text-[20px] font-bold  text-[#52525B]">
+        <p className="mt-10 mb-3 text-[20px] font-bold  text-[#4A5568]">
           Features
         </p>
-        <ul className="list-disc ml-4">
+        <ul
+          className="list-disc ml-4"
+          style={{ marginLeft: "1.5rem", listStyleType: "disc" }}
+        >
           {project.features.map((feature, index) => (
-            <li className="mb-4 text-[#52525B]" key={index}>
-              <strong>{feature.title}:</strong> {feature.description}
+            <li className="mb-4 text-[#4A5568]" key={index}>
+              <strong className="">{feature.title}:</strong>{" "}
+              {feature.description}
             </li>
           ))}
         </ul>

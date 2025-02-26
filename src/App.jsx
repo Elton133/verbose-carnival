@@ -18,7 +18,6 @@ const App = () => {
     <div className="bg-white dark:bg-black text-black dark:text-white transition">
       <Navbar />
       <Routes>
-        {/* Home page will show the following components */}
         <Route
           path="/"
           element={

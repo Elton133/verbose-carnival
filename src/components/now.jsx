@@ -27,12 +27,7 @@ const Now = () => {
           </h3>
         </motion.div>
 
-        <motion.div
-          variants={container}
-          initial="hidden"
-          animate="show"
-          className="text-[#4A5568]"
-        >
+        <motion.div variants={container} initial="hidden" animate="show">
           <div className="flex items-center gap-2 md:text-xl text-[18px] font-bold">
             <p>So, what am I doing now?</p>
             👀

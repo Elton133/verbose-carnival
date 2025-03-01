@@ -251,11 +251,9 @@ export default function ProjectDetails() {
         <h2 className="md:text-3xl text-[18px] font-extrabold">
           {project.title}
         </h2>
-        <p className="text-[#4A5568]">{project.date}</p>
-        <p className="mt-4 mb-10 text-[#4A5568]">{project.description}</p>
-        <p className="mt-4 mb-3 text-[20px] font-bold text-[#4A5568]">
-          Tech Stack
-        </p>
+        <p>{project.date}</p>
+        <p className="mt-4 mb-10 ">{project.description}</p>
+        <p className="mt-4 mb-3 text-[20px] font-bold ">Tech Stack</p>
 
         <ul
           className="list-disc list-inside ml-4"
@@ -267,9 +265,7 @@ export default function ProjectDetails() {
             </li>
           ))}
         </ul>
-        <p className="mt-10 mb-3 text-[20px] font-bold  text-[#4A5568]">
-          Features
-        </p>
+        <p className="mt-10 mb-3 text-[20px] font-bold  ">Features</p>
         <ul
           className="list-disc ml-4"
           style={{ marginLeft: "1.5rem", listStyleType: "disc" }}

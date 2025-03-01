@@ -35,7 +35,7 @@ const TechStack = () => {
         />
 
         <img
-          className="md:w-12 md:h-12 w-6 h-6"
+          className="md:w-12 md:h-12 w-7 h-7"
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
         />
       </div>

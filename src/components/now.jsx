@@ -33,12 +33,12 @@ const Now = () => {
           animate="show"
           className="text-[#4A5568]"
         >
-          <div className="flex items-center gap-2 text-xl font-bold">
+          <div className="flex items-center gap-2 md:text-xl text-[18px] font-bold">
             <p>So, what am I doing now?</p>
             👀
           </div>
 
-          <p>
+          <p className="text-[14px] md:text-base">
             I’m currently a Frontend Engineer intern at Partechnologies and
             Consult. I started on December 27, 2024, after my vacation. In my
             first week, I worked on crafting an employee management dashboard
@@ -53,7 +53,7 @@ const Now = () => {
             </Link>
           </p>
           <br />
-          <p>
+          <p className="text-[14px] md:text-base">
             The first implementation of this dashboard is available
             <Link
               to="/projects/teamvault"
@@ -65,7 +65,7 @@ const Now = () => {
             improving the User Experience.
           </p>
           <br />
-          <p>
+          <p className="text-[14px] md:text-base">
             Throughout this internship, I leveraged multiple skills, including
             React.js, React Hooks, JavaScript, Vite, CSS, and Figma, to develop
             and refine the dashboard. Working in an Agile environment, I applied
@@ -76,7 +76,7 @@ const Now = () => {
             Front-End Development skills.
           </p>
           <br />
-          <p>
+          <p className="text-[14px] md:text-base">
             In February, through Partechnologies and Consult, I had the
             opportunity to work on a real-world project—developing a website for
             an organization focused on global deal sourcing. This project was
@@ -84,7 +84,7 @@ const Now = () => {
             experience in just a month.
           </p>
           <br />
-          <p>
+          <p className="text-[14px] md:text-base">
             Daily Scrum meetings and applying Agile methodologies in a
             real-world setting were incredibly insightful. One particular
             three-hour meeting was so educational that it completely changed my

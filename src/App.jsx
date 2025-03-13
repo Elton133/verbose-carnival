@@ -16,7 +16,7 @@ import Now from "./components/now";
 
 const App = () => {
   return (
-    <div className="bg-white dark:bg-black text-[#A1A1AA] dark:text-[#52525B]transition">
+    <div className="bg-white dark:bg-black text-[#333333] dark:text-[#e0e0e0] transition-colors">
       <Navbar />
       <Routes>
         <Route

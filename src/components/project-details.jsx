@@ -216,7 +216,7 @@ const projectData = [
     image: weather,
     title: "Weather App",
     description:
-      "Pricing Panel is a responsive web application that presents a structured and user-friendly pricing table for different subscription plans. Designed with clean UI and modern styling, the panel effectively displays plan features, pricing details, and call-to-action buttons for easy selection. This project showcases my ability to create intuitive and visually appealing interfaces while ensuring responsiveness and accessibility across devices.",
+      "A weather forecasting app that provides real-time weather updates for any location. The app integrates with a REST API to fetch and display temperature, weather conditions, and more. Developed using React, Vite, and modern API integration techniques, ensuring fast performance and a seamless user experience. Optimized as a Progressive Web App (PWA), allowing users to install it on their devices for offline access and a native-like experience.",
     date: "2024-09-24",
     stack: ["HTML", "CSS"],
     features: [],

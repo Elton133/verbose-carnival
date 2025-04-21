@@ -8,6 +8,7 @@
   position: relative;
   border-radius: 28px;
 }
+
 .nav-links {
   display: flex;
   justify-content: space-between;
@@ -77,8 +78,8 @@ ul li a:active {
   margin-top: 0;
 } */
 .logo {
-  font-family: "Skyrate";
-  font-weight: 700;
+  font-family: "Handlee", cursive;
+  font-weight: 800;
 }
 .hamburger {
   display: none;
@@ -109,7 +110,7 @@ ul li a:active {
 @media (max-width: 768px) {
   .navbar {
     justify-content: space-between;
-    gap: 6em;
+    gap: 8em;
   }
 
   .hamburger {
@@ -168,7 +169,7 @@ ul li a:active {
   font-weight: bold;
   fill: none;
   stroke: var(--stroke-color);
-  stroke-width: 2;
+  stroke-width: 1;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: drawText 10s linear forwards;

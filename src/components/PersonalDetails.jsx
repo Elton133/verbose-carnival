@@ -8,7 +8,7 @@ const PersonalDetails = () => {
             x="50%"
             y="50%"
             textAnchor="middle"
-            className="animated-text fill-current text-black dark:text-white font-[Pacifico]"
+            className="animated-text fill-current text-black dark:text-white md:font-[Pacifico] font-[Handlee]"
           >
             Hi 👋🏿 I'm Elton Morden
           </text>

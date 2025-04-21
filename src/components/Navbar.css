@@ -61,7 +61,7 @@ ul {
 @media (max-width: 768px) {
   .navbar {
     justify-content: space-between;
-    gap: 8em;
+    gap: 7em;
   }
 
   .hamburger {
@@ -89,7 +89,7 @@ ul {
   transition: all 0.3s ease-in-out;
   background-color: rgba(207, 207, 207, 0.534);
   backdrop-filter: blur(20px);
- font-weight: 600;
+  font-weight: 600;
   z-index: 1000;
 }
 

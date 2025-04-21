@@ -23,60 +23,11 @@
   padding: 0.5rem 1rem;
 }
 
-/* .nav-link.active {
-  color: blue;
-  font-weight: bold;
-} */
 ul {
   list-style: none;
   margin: 0;
 }
-/* .btn:nth-of-type(1) {
-  background-color: white;
-  border: 1.5px solid #3563e9;
-  border-radius: 8px;
-  padding: 8px 20px;
-  margin-right: 1em;
-  font-size: 14px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-.btn:nth-of-type(1):hover {
-  cursor: pointer;
-  background-color: #ebf0fc;
-  box-shadow: 0 4px 6px rgba(53, 99, 233, 0.1);
-}
 
-.btn:nth-of-type(2) {
-  background-color: #3563e9;
-  border: 1.5px solid #3563e9;
-  border-radius: 8px;
-  padding: 8px 20px;
-  color: white;
-  font-size: 14px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(53, 99, 233, 0.2);
-}
-
-.btn:nth-of-type(2):hover {
-  cursor: pointer;
-  background-color: #2a4fbf;
-  box-shadow: 0 4px 8px rgba(53, 99, 233, 0.3);
-}
-
-.btn {
-  outline: none;
-}
-
-ul li a:active {
-  color: #3563e9;
-}
-
-.btn:nth-of-type(1),
-.btn:nth-of-type(2) {
-  margin-top: 0;
-} */
 .logo {
   font-family: "Pacifico";
   font-weight: 800;
@@ -136,7 +87,9 @@ ul li a:active {
   visibility: hidden;
   transform: translateY(-10px);
   transition: all 0.3s ease-in-out;
-  background-color: rgba(57, 55, 55, 0.534);
+  background-color: rgba(207, 207, 207, 0.534);
+  backdrop-filter: blur(20px);
+ font-weight: 600;
   z-index: 1000;
 }
 

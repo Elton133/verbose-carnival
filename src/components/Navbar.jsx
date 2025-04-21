@@ -13,8 +13,8 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <nav className="navbar pt-5">
+    <div className="flex items-center justify-center ">
+      <nav className="navbar border border-gray-50 dark:bg-gray-950 dark:border-slate-900 shadow-sm">
         <span className="logo font-bold">
           <a href="/">Elton</a>
         </span>
@@ -22,8 +22,8 @@ const Navbar = () => {
           ☰
         </span>
 
-        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <li>
+        <ul className={`nav-links ${menuOpen ? "open" : ""} `}>
+          <li className="hover:bg-gray-100 rounded-full">
             <Link to="/projects">Projects</Link>
           </li>
           <li>

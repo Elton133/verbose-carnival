@@ -3,8 +3,10 @@
   justify-content: center;
   align-items: center;
   gap: 18em;
-  padding: 10px 20px;
+  margin: 10px 20px;
+  padding: 3px 15px;
   position: relative;
+  border-radius: 28px;
 }
 .nav-links {
   display: flex;
@@ -19,6 +21,7 @@
   font-size: 14px;
   padding: 0.5rem 1rem;
 }
+
 /* .nav-link.active {
   color: blue;
   font-weight: bold;

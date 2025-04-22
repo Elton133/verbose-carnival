@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-center ">
-      <nav className="navbar border border-gray-50 dark:bg-gray-950 dark:border-slate-900 shadow-sm">
+      <nav className="navbar border border-gray-50 dark:bg-gray-950 dark:border-slate-900 shadow-sm ">
         <span className="logo font-bold">
           <a href="/">Elton</a>
         </span>

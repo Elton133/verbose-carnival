@@ -13,6 +13,7 @@ import Footer from "./components/footer";
 import Projects from "./components/projects";
 import ProjectDetails from "./components/project-details";
 import Now from "./components/now";
+import CTA from "./components/cta";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
             <>
               <PersonalDetails />
               <AboutMe />
+              <CTA />
               <TechStack />
               <Contact />
               <ProjectsSection />

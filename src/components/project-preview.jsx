@@ -1,7 +1,6 @@
-
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import github from "../assets/github.png"; 
+import github from "../assets/github.png";
 
 const container = {
   hidden: { opacity: 0 },
@@ -37,7 +36,7 @@ export default function ProjectsSection() {
       url: "https://tourghana.vercel.app",
       github: "https://github.com/Elton133/Tour-Ghana.git",
     },
-   
+
     {
       id: "weather",
       title: "Weather app",
@@ -83,7 +82,7 @@ export default function ProjectsSection() {
                         onClick={(e) => e.stopPropagation()}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs text-cyan-600 hover:underline"
+                        className="text-sm text-cyan-600 hover:underline"
                       >
                         Live ↗
                       </a>
@@ -95,7 +94,7 @@ export default function ProjectsSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <img src={github} alt="GitHub" className="w-4 h-4 " />
+                        <img src={github} alt="GitHub" className="w-5 h-5" />
                       </a>
                     )}
                   </div>
@@ -112,9 +111,7 @@ export default function ProjectsSection() {
             </motion.div>
           ))}
         </motion.div>
-        
       </div>
-      
     </div>
   );
 }

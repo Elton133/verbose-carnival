@@ -1,11 +1,7 @@
-import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { Routes, Route } from "react-router-dom";
 import PersonalDetails from "./components/PersonalDetails";
-import Home from "./pages/Home";
 import ProjectsSection from "./components/project-preview";
-import Banner from "./components/Banner";
 import AboutMe from "./components/about-me";
 import TechStack from "./components/tech-stack";
 import Contact from "./components/contact";
@@ -16,6 +12,7 @@ import Now from "./components/now";
 import CTA from "./components/cta";
 import StaggeredMenu from "./components/StaggeredMenu";
 import ThemeToggle from "./components/theme-toggle";
+import PainPointCards from "./components/PainPointCards";
 
 const App = () => {
 
@@ -60,6 +57,7 @@ const socialItems = [
             <>
             <ThemeToggle  />
               <PersonalDetails />
+              <PainPointCards />
               <AboutMe />
               <CTA />
               <TechStack />

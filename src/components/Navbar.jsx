@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.css";
-import { useNavigate } from "react-router-dom";
 import ThemeToggle from "./theme-toggle";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,17 +11,14 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex items-center justify-center ">
-      <nav className="navbar border border-gray-50 dark:bg-gray-950 dark:border-slate-900 shadow-sm ">
+    <div className="w-full sticky top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+      <nav className="navbar">
         <span className="logo font-bold">
           <a href="/">Elton</a>
         </span>
-        <span className="hamburger" onClick={toggleMenu}>
-          ☰
-        </span>
-
-        <ul className={`nav-links ${menuOpen ? "open" : ""} `}>
-          <li className="hover:bg-gray-100 rounded-full">
+        
+        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <li>
             <Link to="/projects">Projects</Link>
           </li>
           <li>
@@ -36,9 +31,13 @@ const Navbar = () => {
             <Link to="#">Tutorials</Link>
           </li>
         </ul>
-        <span>
+        
+        <div className="flex items-center gap-4">
           <ThemeToggle />
-        </span>
+          <span className="hamburger" onClick={toggleMenu}>
+            ☰
+          </span>
+        </div>
       </nav>
     </div>
   );

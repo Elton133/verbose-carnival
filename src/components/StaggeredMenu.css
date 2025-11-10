@@ -13,8 +13,12 @@
   height: 100vh;
   z-index: 40;
   overflow: hidden;
+  pointer-events: none; /* 👈 disable clicks when the menu is closed */
 }
 
+.staggered-menu-wrapper.fixed-wrapper[data-open="true"] {
+  pointer-events: auto; /* 👈 enable clicks only when the menu is open */
+}
 .staggered-menu-header {
   position: absolute;
   top: 0;
@@ -57,6 +61,9 @@
   font-weight: 500;
   line-height: 1;
   overflow: visible;
+}
+button.sm-toggle{
+  color: black;
 }
 
 .sm-toggle:focus-visible {

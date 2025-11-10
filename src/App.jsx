@@ -15,6 +15,7 @@ import ProjectDetails from "./components/project-details";
 import Now from "./components/now";
 import CTA from "./components/cta";
 import StaggeredMenu from "./components/StaggeredMenu";
+import ThemeToggle from "./components/theme-toggle";
 
 const App = () => {
 
@@ -34,8 +35,9 @@ const socialItems = [
     <div className="bg-white dark:bg-black text-[#333333] dark:text-[#e0e0e0] transition-colors">
      
 
-<div style={{background: '#1a1a1a', height: '100vh' }}>
+<div style={{background: '#1a1a1a'}}>
   <StaggeredMenu
+  isFixed={true}
     position="right"
     items={menuItems}
     socialItems={socialItems}
@@ -56,6 +58,7 @@ const socialItems = [
           path="/"
           element={
             <>
+            <ThemeToggle  />
               <PersonalDetails />
               <AboutMe />
               <CTA />

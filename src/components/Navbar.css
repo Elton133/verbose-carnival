@@ -1,17 +1,18 @@
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 18em;
-  margin: 10px 20px;
-  padding: 6px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
   position: relative;
-  border-radius: 28px;
 }
 
 .nav-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0;
   opacity: 1;
   visibility: visible;
@@ -19,8 +20,19 @@
 }
 .nav-links a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
   padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dark .nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 ul {
@@ -31,6 +43,7 @@ ul {
 .logo {
   font-family: "Pacifico";
   font-weight: 800;
+  font-size: 1.5rem;
 }
 .hamburger {
   display: none;
@@ -47,21 +60,27 @@ ul {
   top: 100%;
   left: 0;
   right: 0;
-  padding: 2rem 0;
-  gap: 1em;
-  border-top: 1px solid #e1e1e1;
+  padding: 1rem 0;
+  gap: 0.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   z-index: 10;
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-  width: 80vw;
-  border-radius: 15px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark .nav-links.open {
+  background-color: rgba(0, 0, 0, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 768px) {
   .navbar {
-    justify-content: space-between;
-    gap: 7em;
+    padding: 1rem;
   }
 
   .hamburger {
@@ -70,32 +89,16 @@ ul {
 
   .nav-links {
     display: none;
-    flex-direction: column;
   }
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  padding: 1rem 0;
-  z-index: 1000;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: all 0.3s ease-in-out;
-  background-color: rgba(207, 207, 207, 0.534);
-  backdrop-filter: blur(20px);
-  font-weight: 600;
-  z-index: 1000;
+  
+  .nav-links.open {
+    display: flex;
+  }
 }
 
 @media (min-width: 768px) {
   .nav-links {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     position: static;
     opacity: 1;

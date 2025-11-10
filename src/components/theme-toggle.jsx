@@ -1,9 +1,9 @@
 // ThemeToggle.js
 import { useEffect, useState } from "react";
-import { MoonStarIcon, Sun } from "lucide-react";
+import { MoonStarIcon } from "lucide-react";
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 
   useEffect(() => {
     if (theme === "dark") {

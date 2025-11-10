@@ -230,74 +230,97 @@ export default function ProjectDetails() {
   const project = projectData.find((p) => p.id === id);
 
   if (!project) {
-    return <h2 className="text-center mt-10">Project Not Found</h2>;
+    return <h2 className="text-center mt-10 dark:text-white">Project Not Found</h2>;
   }
 
   return (
     <>
       <Link
-        className="ml-10 p-3 rounded-full text-white bg-blue-500 hover:bg-blue-600 transition duration-300"
+        className="ml-10 p-3 rounded-full text-white bg-blue-500 hover:bg-blue-600 dark:bg-cyan-600 dark:hover:bg-cyan-700 transition duration-300"
         to="/projects"
       >
         Back
       </Link>
-      <div className="p-6 max-w-3xl mx-auto mt-20">
-        {project.isVideo ? (
-          <video
-            src={project.image}
-            alt={project.title}
-            className="mb-7 rounded-2xl w-full h-auto object-cover transition-transform duration-500 hover:scale-103"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
-        ) : (
-          <img
-            src={project.image}
-            alt={project.title}
-            className="mb-7 rounded-2xl w-full h-auto object-cover  transition-transform duration-500 hover:scale-103"
-          />
+      <div className="p-6 max-w-6xl mx-auto mt-10 font-[Euclid-Circular-B]">
+        {/* Hero Section with Image/Video */}
+        <div className="relative overflow-hidden rounded-2xl mb-10 group">
+          {project.isVideo ? (
+            <video
+              src={project.image}
+              alt={project.title}
+              className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105"
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
+          ) : (
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          )}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 p-8 text-white">
+            <h1 className="text-4xl font-bold mb-2">{project.title}</h1>
+            <p className="text-gray-300">{project.date}</p>
+          </div>
+        </div>
+
+        {/* Description Card */}
+        <div className="bg-white dark:bg-[#1a1a1a] rounded-xl p-6 mb-6 shadow-lg border border-gray-200 dark:border-[#333]">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">About This Project</h3>
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{project.description}</p>
+        </div>
+
+        {/* Tech Stack Card */}
+        <div className="bg-white dark:bg-[#1a1a1a] rounded-xl p-6 mb-6 shadow-lg border border-gray-200 dark:border-[#333]">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Tech Stack</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {project.stack?.map((tech, index) => (
+              <div
+                key={index}
+                className="flex items-center p-3 bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 rounded-lg border border-cyan-200 dark:border-cyan-800"
+              >
+                <span className="w-2 h-2 bg-cyan-500 rounded-full mr-3"></span>
+                <span className="text-gray-800 dark:text-gray-200 font-medium">{tech}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Features Cards */}
+        {project.features.length > 0 && (
+          <div className="mb-6">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Key Features</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {project.features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-[#1a1a1a] rounded-xl p-6 shadow-lg border border-gray-200 dark:border-[#333] hover:border-cyan-500 dark:hover:border-cyan-400 transition-all duration-300 hover:shadow-xl"
+                >
+                  <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
+                    {feature.title}
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400">{feature.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         )}
 
-        <h2 className="md:text-3xl text-[18px] font-extrabold">
-          {project.title}
-        </h2>
-        <p>{project.date}</p>
-        <p className="mt-4 mb-10 ">{project.description}</p>
-        <p className="mt-4 mb-3 text-[20px] font-bold ">Tech Stack</p>
-
-        <ul
-          className="list-disc list-inside ml-4"
-          style={{ marginLeft: "1.5rem", listStyleType: "disc" }}
-        >
-          {project.stack?.map((tech, index) => (
-            <li key={index} className="mb-2 text-blue-400 font-bold">
-              {tech}
-            </li>
-          ))}
-        </ul>
-        <p className="mt-10 mb-3 text-[20px] font-bold  ">Features</p>
-        <ul
-          className="list-disc ml-4"
-          style={{ marginLeft: "1.5rem", listStyleType: "disc" }}
-        >
-          {project.features.map((feature, index) => (
-            <li className="mb-4 text-[#4A5568]" key={index}>
-              <strong className="">{feature.title}:</strong>{" "}
-              {feature.description}
-            </li>
-          ))}
-        </ul>
-
-        <a
-          href={project.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 text-sm mt-4 inline-block p-3 border border-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300"
-        >
-          View Live Project
-        </a>
+        {/* CTA Button */}
+        <div className="flex justify-center mt-8">
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
+          >
+            View Live Project →
+          </a>
+        </div>
       </div>
     </>
   );

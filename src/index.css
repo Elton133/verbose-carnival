@@ -1,3 +1,10 @@
 @import "tailwindcss";
 @variant dark (&:where(.dark, .dark *)) {
 }
+
+@font-face {
+  font-family: "Euclid-Circular-B";
+  src: url("./assets/font/Euclid-Circular-B.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
